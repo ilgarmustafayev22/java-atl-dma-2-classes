@@ -1,4 +1,4 @@
-package az.atlacademy.Lesson31;
+package az.atlacademy.lesson31;
 
 import java.util.Arrays;
 import java.util.Comparator;
