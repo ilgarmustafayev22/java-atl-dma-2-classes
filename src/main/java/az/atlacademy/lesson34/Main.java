@@ -15,6 +15,7 @@ public class Main {
         queue.add("C");
         queue.add("D");
 
+
         String peek = queue.peek();
         System.out.println(peek);
 
