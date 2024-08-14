@@ -13,7 +13,6 @@ public class JdbcApp {
     public static void main(String[] args) {
         Student student = findById(2L).get();
         System.out.println(student);
-
     }
 
     public static Optional<Student> findById(Long id) {
