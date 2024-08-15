@@ -10,9 +10,10 @@ public class JdbcApp {
 
     private static final String FIND_STUDENT_BY_ID = "SELECT * FROM students WHERE id = ?;";
 
-    public static void main(String[] args) {
-        Student student = findById(2L).get();
-        System.out.println(student);
+    public static void main(String[] args) throws SQLException {
+         Student student = findById(2L).get();
+         System.out.println(student);
+
     }
 
     public static Optional<Student> findById(Long id) {
