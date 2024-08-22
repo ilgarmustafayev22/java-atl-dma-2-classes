@@ -27,6 +27,4 @@ public class CarController {
         return ResponseEntity.status(HttpStatus.CREATED).body(car1);
     }
 
-
-
 }
