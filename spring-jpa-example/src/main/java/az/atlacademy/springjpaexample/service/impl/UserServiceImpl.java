@@ -23,11 +23,18 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserResponse createUser(CreateUserRequest userRequest) {
-        UserEntity userEntity = new UserEntity();
-        userEntity.setName(userRequest.getName());
-        userEntity.setSurname(userRequest.getSurname());
-        userEntity.setBirthDate(userRequest.getBirthDate());
-        userEntity.setUserGender(userRequest.getUserGender());
+        //UserEntity userEntity = new UserEntity();
+        //userEntity.setName(userRequest.getName());
+        //userEntity.setSurname(userRequest.getSurname());
+        //userEntity.setBirthDate(userRequest.getBirthDate());
+        //userEntity.setUserGender(userRequest.getUserGender());
+
+        UserEntity userEntity = UserEntity.builder()
+                .name(userRequest.getName())
+                .surname(userRequest.getSurname())
+                .birthDate(userRequest.getBirthDate())
+                .userGender(userRequest.getUserGender())
+                .build();
 
         UserEntity savedUser = userRepository.save(userEntity);
 

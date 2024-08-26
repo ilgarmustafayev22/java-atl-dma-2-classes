@@ -37,4 +37,49 @@ public class UserEntity {
     @Column(name = "user_gender", nullable = false)
     private UserGender userGender;
 
+    public static UserEntityBuilder builder() {
+        return new UserEntityBuilder();
+    }
+
+    public static class UserEntityBuilder {
+        private Long id;
+        private String name;
+        private String surname;
+        private LocalDate birthDate;
+        private UserGender userGender;
+
+        public UserEntityBuilder() {
+
+        }
+
+        public UserEntityBuilder id(Long id) {
+            this.id = id;
+            return this;
+        }
+
+        public UserEntityBuilder name(String name) {
+            this.name = name;
+            return this;
+        }
+
+        public UserEntityBuilder surname(String surname) {
+            this.surname = surname;
+            return this;
+        }
+
+        public UserEntityBuilder birthDate(LocalDate birthDate) {
+            this.birthDate = birthDate;
+            return this;
+        }
+
+        public UserEntityBuilder userGender(UserGender userGender) {
+            this.userGender = userGender;
+            return this;
+        }
+
+        public UserEntity build() {
+            return new UserEntity(id, name, surname, birthDate, userGender);
+        }
+    }
+
 }
