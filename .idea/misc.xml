@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/spring-boot-example" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-boot-relations" />
     <file type="web" url="file://$PROJECT_DIR$/spring-jpa-example" />
   </component>
   <component name="MavenProjectsManager">

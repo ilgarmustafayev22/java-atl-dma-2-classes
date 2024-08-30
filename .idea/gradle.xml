@@ -12,6 +12,14 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-boot-relations" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/spring-boot-relations" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/spring-jpa-example" />
         <option name="modules">
           <set>
