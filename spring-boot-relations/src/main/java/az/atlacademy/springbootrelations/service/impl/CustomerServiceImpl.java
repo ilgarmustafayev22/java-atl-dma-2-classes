@@ -59,6 +59,8 @@ public class CustomerServiceImpl implements CustomerService {
                 .orElseThrow(() -> new CustomerNotFoundException("Customer not found with id" + id));
     }
 
+
+
     @Override
     public List<CustomerResponse> findAll() {
        // return customerRepository.findAll().stream()
@@ -70,7 +72,7 @@ public class CustomerServiceImpl implements CustomerService {
        //                 .build())
        //         .collect(Collectors.toList());
 
-        return customerRepository.findAll().stream()
+        return customerRepository.findAllCustomers().stream()
                 .map(customerMapper::toDto)
                 .collect(Collectors.toList());
     }
@@ -91,6 +93,13 @@ public class CustomerServiceImpl implements CustomerService {
     @Transactional
     public void deleteById(Long id) {
         customerRepository.deleteById(id);
+    }
+
+    @Override
+    public CustomerResponse findByEmail(String email) {
+        return customerRepository.findByEmail(email)
+                .map(customerMapper::toDto)
+                .orElseThrow(() -> new CustomerNotFoundException("Customer not found with email" + email));
     }
 
 }

@@ -13,6 +13,8 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "customers")
+@NamedEntityGraph(name = "Customer.orders",
+        attributeNodes = @NamedAttributeNode("orders"))
 public class CustomerEntity {
 
     @Id
