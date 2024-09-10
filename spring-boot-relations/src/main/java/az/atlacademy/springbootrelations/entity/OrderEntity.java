@@ -18,6 +18,7 @@ public class OrderEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "description", length = 201)
     private String description;
 
     @ManyToOne

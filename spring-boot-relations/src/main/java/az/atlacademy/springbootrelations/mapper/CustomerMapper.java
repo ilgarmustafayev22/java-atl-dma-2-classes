@@ -13,7 +13,6 @@ import static org.mapstruct.MappingConstants.ComponentModel.SPRING;
         unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface CustomerMapper {
 
-
     CustomerEntity toEntity(CreateCustomerRequest customerRequest);
 
     CustomerResponse toDto(CustomerEntity customerEntity);

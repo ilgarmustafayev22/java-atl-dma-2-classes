@@ -21,10 +21,10 @@ public class CustomerEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "full_name")
+    @Column(name = "full_name", length = 50)
     private String fullName;
 
-    @Column(name = "email", unique = true)
+    @Column(name = "email", unique = true, length = 30)
     private String email;
 
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, fetch = FetchType.EAGER)

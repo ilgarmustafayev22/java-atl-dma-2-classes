@@ -1,0 +1,13 @@
+databaseChangeLog:
+   - changeSet:
+         id: addForeignKeyConstraint-orders-table
+         author: Ilgar Mustafayev
+         changes:
+             - addForeignKeyConstraint:
+                   baseTableName: orders
+                   baseColumnNames: customer_id
+                   referencedTableName: customers
+                   referencedColumnNames: id
+                   constraintName: fk_customer_order
+                   onDelete: CASCADE
+                   onUpdate: RESTRICT
