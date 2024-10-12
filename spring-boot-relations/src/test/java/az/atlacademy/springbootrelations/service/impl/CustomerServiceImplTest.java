@@ -31,7 +31,7 @@ class CustomerServiceImplTest {
     @Test
     public void create_customer_success_case(){
         CreateCustomerRequest customerRequest = CreateCustomerRequest.builder()
-                .fullName("Test Test")
+                .fullName("Test Test2")
                 .email("test@gmail.com")
                 .build();
 
