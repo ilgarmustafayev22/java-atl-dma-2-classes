@@ -22,7 +22,6 @@ import java.util.List;
 @RequestMapping("/api/v1/customers")
 public class CustomerController {
 
-
     private final CustomerService customerService;
 
     //Logger logger = LoggerFactory.getLogger(CustomerController.class);

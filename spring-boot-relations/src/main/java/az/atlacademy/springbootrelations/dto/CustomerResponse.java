@@ -8,12 +8,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.experimental.FieldDefaults;
 
+import java.io.Serializable;
 import java.util.List;
 
 @Data
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class CustomerResponse {
+public class CustomerResponse implements Serializable {
 
     Long id;
     String fullName;

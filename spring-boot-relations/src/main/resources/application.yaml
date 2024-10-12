@@ -2,6 +2,13 @@ server:
   port: 8081
 
 spring:
+  cache:
+    redis:
+      host: localhost
+      port: 6379
+  ## cache:
+  ##   redis:
+  ##     time-to-live: 1m
   application:
     liquibase:
       change-log: classpath:db/changelog/db.changelog-master.yaml

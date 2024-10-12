@@ -20,10 +20,26 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-feign-client-example" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/spring-feign-client-example" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/spring-jpa-example" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/spring-jpa-example" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-security-example" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/spring-security-example" />
           </set>
         </option>
       </GradleProjectSettings>

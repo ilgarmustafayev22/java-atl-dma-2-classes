@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Builder
@@ -26,6 +27,9 @@ public class CustomerEntity {
 
     @Column(name = "email", unique = true, length = 30)
     private String email;
+
+   //@Column(name = "birth_date")
+   //private LocalDate birthDate;
 
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JsonBackReference
